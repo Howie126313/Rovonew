@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-07 13:21:32 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-11 11:27:05
+ * @Last Modified time: 2019-10-11 17:54:20
  */
 
 <template>
@@ -46,7 +46,7 @@ export default {
             en: require('@/assets/img/about.png'),
             zh: ''
           },
-          path: '/aboutus'
+          path: '/aboutUs'
         },
         {
           name: 'joinus',
@@ -58,7 +58,7 @@ export default {
             en: require('@/assets/img/joinus.png'),
             zh: ''
           },
-          path: '/joinus'
+          path: '/joinUs'
         },
         {
           name: 'contact',
@@ -70,7 +70,7 @@ export default {
             en: require('@/assets/img/contact.png'),
             zh: ''
           },
-          path: '/contactus'
+          path: '/contactUs'
         },
         {
           name: 'en_zh',
@@ -89,7 +89,6 @@ export default {
   },
   methods: {
     navClicked (o) {
-      console.log('点击', o)
       if (o.name === 'en_zh') {
         if (this.$store.state.language === 'zh') {
           this.$store.commit('changeLanguage', 'en')

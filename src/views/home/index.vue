@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-07 17:44:22 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-09 19:56:37
+ * @Last Modified time: 2019-10-11 17:36:16
  */
 
 <template>
@@ -46,7 +46,7 @@
         </div>
         <!-- 联系我们 -->
         <div v-if="opcityShow" class="opacityAnimate">
-          <img class="mb20" src="@/assets/img/titleContact.png" alt="">
+          <img class="contactTitlePic mb20" src="@/assets/img/titleContact.png" alt="">
           <div class="titleWords pr">联系我们</div>
           <div class="contactBox df ac jsb">
             <div class="left df ac">
@@ -84,14 +84,8 @@ export default {
   },
   data () {
     return {
-      aboutContent: {
-        zh: '是一家全流程影视制作公司，专注开发和制作院线电影。 \n我们致力于制作高美学视觉艺术的国际院线电影，团队集合了国内外众多电影制作人才，制作高水准的院线电影。 \n \n首部影片以科幻、悬疑、动作为题材的电影重工业针对主流年轻人喜爱，并计划在全球上映。公司与中国及好莱坞顶级编剧、导演、摄影师、剪辑师、视觉指导、创意总监、调色师团队合作。秉持“有使命感走向世界”的理念。',
-        en: 'ROVO Picture us a full-process film and television production \ncompany that is committed to producing international films of great \nasethetic value and impresing visual arts. \nExcellent film production talents are brought together both at home \nand abroad to produce high-quality films. \nOur first film is base on the theme of science fiction, suspense, and action. It is planned to released globally, taking the young \ngeneration as its target. Our company works with top Chinese and Hollywood screenwriters, directors, photographers, editors, visual effect advisors, creative directors, and colorists. The mission of going global is firmly adhered to.'
-      },
-      joinContent: {
-        zh: '招聘全职英文翻译 \n英语专业硕士毕业 \n翻译能力强，男女不限 \n工作地点：洛杉矶、纽约、北京 \n能适应美国工作，吃苦耐劳，薪资面谈 \n \n欢迎加入我们',
-        en: 'We are looking for full-time fashion designers, film and television \ncharacter designers, and stagecraft designers. \nSkills Needed: Strong design capability. \nKey Resonsibilities: Concept clothing design, sci-fi costumes \ndesign, landscapes and props design. \nLocation: Los Angeles, New York, Beijing. \nWe hope you are able to work in the U.S. and bear hardships, \nsalary will be discussed in person. \nResumes and portfolios can be sent to the following mailbox.'
-      },
+      aboutContent: this.$store.getters.getAboutText,
+      joinContent: this.$store.getters.getJoinText,
       opcityShow: true
     }
   },
@@ -156,7 +150,7 @@ export default {
   text-align: center;
 }
 
-.aboutContent > .pr > img, .aboutContent > img {
+.aboutContent > .pr > img, .aboutContent > img, .contactTitlePic {
   width: auto;
   height: 40px;
 }
@@ -180,15 +174,6 @@ export default {
   position: absolute;
   left: -5%;
   bottom: 50%;
-}
-
-@keyframes opacity{
-  from{opacity: 0;}
-  to{opacity: 1;}
-}
-
-.opacityAnimate {
-  animation: opacity 1.3s ease-in-out;
 }
 
 .aboutWords {

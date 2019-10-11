@@ -2,7 +2,7 @@
  * @Author: wanghaoyu
  * @Date: 2019-03-12 15:23:40
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-07 13:38:18
+ * @Last Modified time: 2019-10-11 15:31:22
  */
 
  .pr {position: relative;}
@@ -98,6 +98,11 @@
  .mr50 { margin-right: 50px }
  .mb50 { margin-bottom: 50px }
  .ml50 { margin-left: 50px }
+ .m60 { margin: 60px }
+ .mt60 { margin-top: 60px }
+ .mr60 { margin-right: 60px }
+ .mb60 { margin-bottom: 60px }
+ .ml60 { margin-left: 60px }
  
  .p15 { padding: 15px }
  .pt15 { padding-top: 15px }
@@ -145,5 +150,12 @@
  
  .cp {cursor: pointer;}
  
- 
+ @keyframes opacity{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+  
+.opacityAnimate {
+  animation: opacity 1.3s ease-in-out;
+}
  

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <router-view></router-view>
+    <transition :name="transitionName">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -12,12 +14,19 @@ export default {
   name: 'app',
   components: {
     Header
+  },
+  data () {
+    return {
+      transitionName: 'transitionAnimation'
+    }
   }
 }
 </script>
 
 <style>
 body {
+  width: auto;
+  height: auto;
   background-color: black;
 }
 
@@ -30,6 +39,16 @@ body {
   width: 100%;
   /* max-width: 1860px; */
   margin: 0 auto;
+}
+
+@keyframes opacity{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.transitionAnimation {
+  animation-name: opacity;
+  animation-duration: 10s;
 }
 
 </style>
