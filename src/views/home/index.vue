@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-07 17:44:22 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-12 17:02:14
+ * @Last Modified time: 2019-10-12 17:04:07
  */
 
 <template>
@@ -39,7 +39,7 @@
             </p>
             <div class="content" v-html="aboutContent[language]"></div>
           </div>
-          <img src="@/assets/img/rightArrow.png" alt="" class="rightArrow cp">
+          <img src="@/assets/img/rightArrow.png" alt="" class="rightArrow cp" @click="tpDetail('/aboutUs')">
         </div>
         <!-- 加入我们 -->
         <div v-if="opcityShow" class="pr opacityAnimate">
@@ -52,7 +52,7 @@
             </p>
             <div class="content" v-html="joinContent[language]"></div>
           </div>
-          <img src="@/assets/img/rightArrow.png" alt="" class="rightArrow cp">
+          <img src="@/assets/img/rightArrow.png" alt="" class="rightArrow cp" @click="tpDetail('/joinUs')">
         </div>
         <!-- 联系我们 -->
         <div v-if="opcityShow" class="opacityAnimate">
@@ -136,6 +136,9 @@ export default {
     },
     navTagOut (o) {
       this.activeBanner = 0
+    },
+    tpDetail (s) {
+      this.$router.push({path: s})
     }
   }
 }
