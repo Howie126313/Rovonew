@@ -2,10 +2,11 @@
  * @Author: Howie 
  * @Date: 2019-10-11 11:22:47 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-11 17:14:55
+ * @Last Modified time: 2019-10-12 16:00:24
  */
 <template>
   <div id="aboutus">
+    <Header />
     <div class="container">
       <WordSwiper :options="options" />
     </div>
@@ -14,9 +15,11 @@
 
 <script>
 import WordSwiper from '@/components/layout/WordSwiper.vue'
+import Header from '@/components/PageHeader.vue'
 
 export default {
   components: {
+    Header,
     WordSwiper
   },
   data () {

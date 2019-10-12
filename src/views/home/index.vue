@@ -2,14 +2,24 @@
  * @Author: Howie 
  * @Date: 2019-10-07 17:44:22 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-11 17:36:16
+ * @Last Modified time: 2019-10-12 17:02:14
  */
 
 <template>
   <div id="home">
+    <Header 
+    @navTagOver="navTagOver"
+    @navTagOut="navTagOut"/>
     <!-- banner -->
     <div class="pr">
-      <img src="@/assets/img/banner.png" alt="" class="homeImg">
+      <template v-for="(img, imgIndex) in bannerArr">
+        <img
+        v-show="activeBanner === imgIndex" 
+        :key="imgIndex"
+        :src="img.bgPath" 
+        alt="" 
+        class="homeImg opacityAnimate">
+      </template>
       <div class="rovoContainer tc cp" @click="scrollToAbout">
         <img src="@/assets/img/homeRovo.png" alt="" class="rovo mb15">
         <img src="@/assets/img/downArrow.png" alt="" class="rovoArrow">
@@ -67,10 +77,18 @@
 </template>
 
 <script>
+import Header from '@/components/PageHeader.vue'
+
 export default {
+  components: {
+    Header
+  },
   computed: {
     language () {
       return this.$store.getters.getLanguage
+    },
+    swiper() {
+      return this.$refs.swiper.swiper
     }
   },
   watch: {
@@ -86,19 +104,38 @@ export default {
     return {
       aboutContent: this.$store.getters.getAboutText,
       joinContent: this.$store.getters.getJoinText,
-      opcityShow: true
+      opcityShow: true,
+      bgSrc: require('@/assets/img/banner.png'),
+      bannerArr: [],
+      activeBanner: 0
     }
+  },
+  created () {
+    this.initBanner()
   },
   mounted () {
     this.init()
   },
   methods: {
+    initBanner () {
+      this.bannerArr = this.$store.getters.getNavArr.slice(0)
+      this.bannerArr.unshift({
+        index: 0,
+        bgPath: this.bgSrc
+      })
+    },
     init () {
       document.title = 'Rovonew | 洛弗影业'
     },
     scrollToAbout () {
       let distance = this.$refs.about.offsetTop - 60
       window.scrollTo({"behavior": "smooth", "top": distance})
+    },
+    navTagOver (o) {
+      this.activeBanner = o.index
+    },
+    navTagOut (o) {
+      this.activeBanner = 0
     }
   }
 }
@@ -117,6 +154,7 @@ export default {
   position: absolute;
   right: 7%;
   bottom: 4%;
+  z-index: 9;
 }
 
 .rovo {

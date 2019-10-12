@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-07 13:21:32 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-11 17:54:20
+ * @Last Modified time: 2019-10-12 16:25:34
  */
 
 <template>
@@ -14,12 +14,10 @@
         :class="[index >= navArr.length - 1 ? 'navItem pr' : 'navItem pr mr40']"
         v-for="(item, index) in navArr"
         :key="index"
-        @click="navClicked(item)">
-          <span class="cp">{{item.words[language]}}</span>
-          <!-- <img 
-          :src="item.picUrl.en" 
-          alt="" 
-          class="navItemPic1 cp"> -->
+        @click="navClicked(item)"
+        @mouseenter="navItemOver(item)"
+        @mouseleave="navItemOut(item)">
+          <div class="navItemBtn cp">{{item.words[language]}}</div>
         </div>
       </div>
     </div>
@@ -35,56 +33,7 @@ export default {
   },
   data () {
     return {
-      navArr: [
-        {
-          name: 'about',
-          words: {
-            zh: '关于我们',
-            en: 'ABOUT'
-          },
-          picUrl: {
-            en: require('@/assets/img/about.png'),
-            zh: ''
-          },
-          path: '/aboutUs'
-        },
-        {
-          name: 'joinus',
-          words: {
-            zh: '加入我们',
-            en: 'JOIN US'
-          },
-          picUrl: {
-            en: require('@/assets/img/joinus.png'),
-            zh: ''
-          },
-          path: '/joinUs'
-        },
-        {
-          name: 'contact',
-          words: {
-            zh: '联系我们',
-            en: 'CONTACT'
-          },
-          picUrl: {
-            en: require('@/assets/img/contact.png'),
-            zh: ''
-          },
-          path: '/contactUs'
-        },
-        {
-          name: 'en_zh',
-          words: {
-            zh: '中文 / EN',
-            en: 'EN / 中文'
-          },
-          picUrl: {
-            en: require('@/assets/img/en_zh.png'),
-            zh: ''
-          },
-          path: ''
-        }
-      ]
+      navArr: this.$store.getters.getNavArr
     }
   },
   methods: {
@@ -95,12 +44,20 @@ export default {
         } else {
           this.$store.commit('changeLanguage', 'zh')
         }
+      } else if (o.path === this.$router.history.current.path) {
+        return
       } else {
         this.$router.push({path: o.path})
       }
     },
     backHome () {
       this.$router.push({path: '/'})
+    },
+    navItemOver (o) {
+      this.$emit('navTagOver', o)
+    },
+    navItemOut (o) {
+      this.$emit('navTagOut', o)
     }
   }
 }
@@ -133,6 +90,14 @@ export default {
   margin-top: 10px;
 }
 
+.nav {
+  height: 100%;
+}
+
+.navItem {
+  height: 100%;
+}
+
 .navItemPic {
   width: 63px;
   height: 15px;
@@ -144,7 +109,8 @@ export default {
   margin-top: 3px;
 }
 
-.navItem span {
+.navItemBtn {
+  height: 100%;
   font-weight: 100;
   font-size: 20px;
   color: #fff;

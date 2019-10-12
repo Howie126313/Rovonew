@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <Header />
-    <transition :name="transitionName">
-      <router-view></router-view>
-    </transition>
+    <router-view></router-view>
   </div>
 </template>
 

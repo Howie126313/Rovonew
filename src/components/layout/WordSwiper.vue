@@ -2,14 +2,18 @@
  * @Author: Howie 
  * @Date: 2019-10-11 14:00:59 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-11 17:49:56
+ * @Last Modified time: 2019-10-12 16:36:30
  */
 
 /* eslint-disable */
 <template>
   <div id="wordSwiper" class="df ac jsb">
     <div class="leftContainer opacityAnimate tc">
-      <img class="titleImg mb50" :src="options.titleImg" alt="">
+      <div class="pr mb50">
+        <img class="titleImg" :src="options.titleImg" alt="">
+        <div class="leftDiv"></div>
+        <div class="rightDiv"></div>
+      </div>
       <div v-if="opcityShow" class="title opacityAnimate mb30"><span v-show="language === 'zh'">洛弗影业</span> ROVO Picture </div>
       <div v-if="opcityShow" class="content opacityAnimate tl" v-html="options.contentText[language]"></div>
     </div>
@@ -192,6 +196,26 @@ export default {
   left: -10%;
   top: 48%;
   animation: rightLeft 1.3s ease-in-out infinite alternate;
+}
+
+.leftDiv {
+  width: 5%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(0, -1px);
+}
+
+.rightDiv {
+  width: 5%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translate(0, -1px);
 }
 
 </style>

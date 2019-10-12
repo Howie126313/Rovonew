@@ -7,6 +7,64 @@ export default {
   joinText: {
     zh: '招聘全职英文翻译 \n英语专业硕士毕业 \n翻译能力强，男女不限 \n工作地点：洛杉矶、纽约、北京 \n能适应美国工作，吃苦耐劳，薪资面谈 \n \n欢迎加入我们',
     en: 'We are looking for full-time fashion designers, film and television \ncharacter designers, and stagecraft designers. \nSkills Needed: Strong design capability. \nKey Resonsibilities: Concept clothing design, sci-fi costumes \ndesign, landscapes and props design. \nLocation: Los Angeles, New York, Beijing. \nWe hope you are able to work in the U.S. and bear hardships, \nsalary will be discussed in person. \nResumes and portfolios can be sent to the following mailbox.'
-  }
+  },
+  navArr: [
+    {
+      index: 1,
+      name: 'about',
+      words: {
+        zh: '关于我们',
+        en: 'ABOUT'
+      },
+      picUrl: {
+        en: require('@/assets/img/about.png'),
+        zh: ''
+      },
+      path: '/aboutUs',
+      bgPath: require('@/assets/img/index-01.png')
+    },
+    {
+      index: 2,
+      name: 'joinus',
+      words: {
+        zh: '加入我们',
+        en: 'JOIN US'
+      },
+      picUrl: {
+        en: require('@/assets/img/joinus.png'),
+        zh: ''
+      },
+      path: '/joinUs',
+      bgPath: require('@/assets/img/index-02.png')
+    },
+    {
+      index: 3,
+      name: 'contact',
+      words: {
+        zh: '联系我们',
+        en: 'CONTACT'
+      },
+      picUrl: {
+        en: require('@/assets/img/contact.png'),
+        zh: ''
+      },
+      path: '/contactUs',
+      bgPath: require('@/assets/img/index-03.png')
+    },
+    {
+      index: 4,
+      name: 'en_zh',
+      words: {
+        zh: '中文 / EN',
+        en: 'EN / 中文'
+      },
+      picUrl: {
+        en: require('@/assets/img/en_zh.png'),
+        zh: ''
+      },
+      path: '',
+      bgPath: require('@/assets/img/index-00.png')
+    }
+  ]
 }
   
