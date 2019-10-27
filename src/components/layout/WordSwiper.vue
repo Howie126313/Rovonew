@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-11 14:00:59 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-12 16:36:30
+ * @Last Modified time: 2019-10-26 15:26:52
  */
 
 /* eslint-disable */
@@ -26,7 +26,7 @@
           <swiper-slide 
           v-for="(item, index) in options.swiperArr"
           :key="index">
-            {{item}}
+            <img class="swiperImg" :src="item" alt="">
           </swiper-slide>
         </swiper>
         <!-- 切换 -->
@@ -114,6 +114,7 @@ export default {
 .leftContainer {
   width: 30%;
   height: auto;
+  margin-left: 145px;
 }
 
 .titleImg {
@@ -130,7 +131,7 @@ export default {
 }
 
 .rightContainer {
-  width: 65%;
+  width: 60%;
   height: 100%;
   box-sizing: border-box;
 }
@@ -143,7 +144,6 @@ export default {
   width: 60%;
   height: 60%;
   box-sizing: border-box;
-  border:1px solid gray;
 }
 
 .swiper-container, .swiper-container-initialized, .swiper-container-horizontal {
@@ -216,6 +216,16 @@ export default {
   right: 15%;
   top: 50%;
   transform: translate(0, -1px);
+}
+
+.headerSpace {
+  width: 100%;
+  height: 60px;
+}
+
+.swiperImg {
+  width: 100%;
+  height: 100%;
 }
 
 </style>

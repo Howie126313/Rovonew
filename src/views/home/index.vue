@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-07 17:44:22 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-12 17:04:07
+ * @Last Modified time: 2019-10-26 14:40:54
  */
 
 <template>
@@ -148,14 +148,14 @@ export default {
 .homeImg {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .rovoContainer {
   width: 20%;
   height: auto;
   position: absolute;
-  right: 7%;
+  right: 3%;
   bottom: 4%;
   z-index: 9;
 }
@@ -170,6 +170,7 @@ export default {
 }
 
 .rovoArrow {
+  opacity: .6;
   width: 15%;
   height: auto;
   margin: 0 auto;

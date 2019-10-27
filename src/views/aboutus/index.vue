@@ -2,11 +2,12 @@
  * @Author: Howie 
  * @Date: 2019-10-11 11:22:47 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-12 16:00:24
+ * @Last Modified time: 2019-10-26 15:17:36
  */
 <template>
   <div id="aboutus">
     <Header />
+    <div class="space"></div>
     <div class="container">
       <WordSwiper :options="options" />
     </div>
@@ -27,7 +28,7 @@ export default {
       options: {
         titleImg: require('@/assets/img/titleAbout.png'),
         contentText: this.$store.getters.getAboutText,
-        swiperArr: [1, 2, 3, 4]
+        swiperArr: this.$store.getters.getSwiperArr
       }
     }
   }
@@ -45,11 +46,17 @@ export default {
   height: 100%;
   color: #fff;
   font-size: 40px;
+  overflow: auto;
 }
 
 .container {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+}
+
+.space {
+  width: 100%;
+  height: 60px;
 }
 </style>

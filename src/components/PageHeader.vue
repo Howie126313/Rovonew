@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-07 13:21:32 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-12 16:25:34
+ * @Last Modified time: 2019-10-26 15:30:45
  */
 
 <template>
@@ -11,7 +11,7 @@
       <img class="logo cp" src="@/assets/img/logo.png" alt="" @click="backHome">
       <div class="nav df ac">
         <div 
-        :class="[index >= navArr.length - 1 ? 'navItem pr' : 'navItem pr mr40']"
+        :class="[index >= navArr.length - 1 ? 'navItem pr mr20' : 'navItem pr mr60']"
         v-for="(item, index) in navArr"
         :key="index"
         @click="navClicked(item)"
@@ -111,8 +111,8 @@ export default {
 
 .navItemBtn {
   height: 100%;
-  font-weight: 100;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 18px;
   color: #fff;
   line-height: 60px;
 }
