@@ -26,7 +26,7 @@ export default {
   data () {
     return {
       options: {
-        titleImg: require('@/assets/img/titleAbout.png'),
+        titleImg: 'http://47.116.199.18/static/titleAbout.png',
         contentText: this.$store.getters.getAboutText,
         swiperArr: this.$store.getters.getSwiperArr
       }

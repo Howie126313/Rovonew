@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-11 11:22:47 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-26 15:27:25
+ * @Last Modified time: 2020-02-27 16:04:51
  */
 <template>
   <div id="joinus">
@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       options: {
-        titleImg: require('@/assets/img/titleJoin.png'),
+        titleImg: 'http://47.116.199.18/static/titleJoin.png',
         contentText: this.$store.getters.getJoinText,
         swiperArr: this.$store.getters.getSwiperArr
       }

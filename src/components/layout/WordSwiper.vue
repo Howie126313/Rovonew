@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-11 14:00:59 
  * @Last Modified by: Howie
- * @Last Modified time: 2019-10-26 15:26:52
+ * @Last Modified time: 2020-02-27 16:09:41
  */
 
 /* eslint-disable */
@@ -30,8 +30,8 @@
           </swiper-slide>
         </swiper>
         <!-- 切换 -->
-        <img src="@/assets/img/rightArrow.png" alt="" class="leftArrow cp" @click="changePic('pre')">
-        <img src="@/assets/img/rightArrow.png" alt="" class="rightArrow cp"  @click="changePic('next')">
+        <img src="http://47.116.199.18/static/rightArrow.png" alt="" class="leftArrow cp" @click="changePic('pre')">
+        <img src="http://47.116.199.18/static/rightArrow.png" alt="" class="rightArrow cp"  @click="changePic('next')">
         <!-- 分页器 -->
         <div class="paginationContain df ac">
           <div 
@@ -81,6 +81,9 @@ export default {
         pagination: {
             el: '.swiper-pagination',
             clickable : false
+        },
+         lazy: {
+          loadPrevNext: true,
         }
       },
       activeBanner: 0
@@ -89,7 +92,7 @@ export default {
   mounted () {
   },
   methods: {
-    swiperChange (o) {
+    swiperChange () {
       this.activeBanner = this.swiper.activeIndex
     },
     changePic (s) {

@@ -5,12 +5,10 @@
 </template>
 
 <script>
-import Header from '@/components/PageHeader.vue'
 
 export default {
   name: 'app',
   components: {
-    Header
   },
   data () {
     return {

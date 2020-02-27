@@ -17,11 +17,11 @@ export default {
         en: 'ABOUT'
       },
       picUrl: {
-        en: require('@/assets/img/about.png'),
+        en: 'http://47.116.199.18/static/about.png',
         zh: ''
       },
       path: '/aboutUs',
-      bgPath: require('@/assets/img/index-00.png')
+      bgPath: 'http://47.116.199.18/static/index-00.png'
     },
     {
       index: 2,
@@ -31,11 +31,11 @@ export default {
         en: 'JOIN US'
       },
       picUrl: {
-        en: require('@/assets/img/joinus.png'),
+        en: 'http://47.116.199.18/static/joinus.png',
         zh: ''
       },
       path: '/joinUs',
-      bgPath: require('@/assets/img/index-01.png')
+      bgPath: 'http://47.116.199.18/static/index-01.png'
     },
     {
       index: 3,
@@ -45,11 +45,11 @@ export default {
         en: 'CONTACT'
       },
       picUrl: {
-        en: require('@/assets/img/contact.png'),
+        en: 'http://47.116.199.18/static/contact.png',
         zh: ''
       },
       path: '/contactUs',
-      bgPath: require('@/assets/img/index-04.png')
+      bgPath: 'http://47.116.199.18/static/index-04.png'
     },
     {
       index: 4,
@@ -59,24 +59,24 @@ export default {
         en: 'EN / 中文'
       },
       picUrl: {
-        en: require('@/assets/img/en_zh.png'),
+        en: 'http://47.116.199.18/static/en_zh.png',
         zh: ''
       },
       path: '',
-      bgPath: require('@/assets/img/index-02.png')
+      bgPath: 'http://47.116.199.18/static/index-02.png'
     }
   ],
   swiperArr: [
-    require('@/assets/img/swiperPIc/pic-01.png'),
-    require('@/assets/img/swiperPIc/pic-02.png'),
-    require('@/assets/img/swiperPIc/pic-03.png'),
-    require('@/assets/img/swiperPIc/pic-04.png'),
-    require('@/assets/img/swiperPIc/pic-05.png'),
-    require('@/assets/img/swiperPIc/pic-06.png'),
-    require('@/assets/img/swiperPIc/pic-07.png'),
-    require('@/assets/img/swiperPIc/pic-08.png'),
-    require('@/assets/img/swiperPIc/pic-09.png'),
-    require('@/assets/img/swiperPIc/pic-10.png'),
+    'http://47.116.199.18/static/swiperPIc/pic-01.png',
+    'http://47.116.199.18/static/swiperPIc/pic-02.png',
+    'http://47.116.199.18/static/swiperPIc/pic-03.png',
+    'http://47.116.199.18/static/swiperPIc/pic-04.png',
+    'http://47.116.199.18/static/swiperPIc/pic-05.png',
+    'http://47.116.199.18/static/swiperPIc/pic-06.png',
+    'http://47.116.199.18/static/swiperPIc/pic-07.png',
+    'http://47.116.199.18/static/swiperPIc/pic-08.png',
+    'http://47.116.199.18/static/swiperPIc/pic-09.png',
+    'http://47.116.199.18/static/swiperPIc/pic-10.png',
   ]
 }
   
