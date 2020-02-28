@@ -9,18 +9,18 @@
     <Header />
     <div class="container df">
       <div class="wrap df ac">
-        <img class="titleImg" src="http://47.116.199.18/static/titleContact.png" alt="">
+        <img class="titleImg" src="http://47.116.199.18/static/pc/titleContact.png" alt="">
         <div class="contactBox">
           <div class="left df ac mb50">
             <div class="iconWrap mr15 df ac jsc">
-              <img src="http://47.116.199.18/static/phoneIcon.png" alt="">
+              <img src="http://47.116.199.18/static/pc/phoneIcon.png" alt="">
             </div>
             <p v-if="language === 'en'">weChat: ROVODORIS</p>
             <p v-else>微信: ROVODORIS</p>
           </div>
           <div class="right df ac">
             <div class="iconWrap mr15 df ac jsc">
-              <img src="http://47.116.199.18/static/mailIcon.png" alt="">
+              <img src="http://47.116.199.18/static/pc/mailIcon.png" alt="">
             </div>
             <p v-if="language === 'en'">E-mail: 1187370088@qq.com</p>
             <p v-else>邮箱: 1187370088@qq.com</p>

@@ -30,8 +30,8 @@
           </swiper-slide>
         </swiper>
         <!-- 切换 -->
-        <img src="http://47.116.199.18/static/rightArrow.png" alt="" class="leftArrow cp" @click="changePic('pre')">
-        <img src="http://47.116.199.18/static/rightArrow.png" alt="" class="rightArrow cp"  @click="changePic('next')">
+        <img src="http://47.116.199.18/static/pc/rightArrow.png" alt="" class="leftArrow cp" @click="changePic('pre')">
+        <img src="http://47.116.199.18/static/pc/rightArrow.png" alt="" class="rightArrow cp"  @click="changePic('next')">
         <!-- 分页器 -->
         <div class="paginationContain df ac">
           <div 

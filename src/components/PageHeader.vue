@@ -2,13 +2,13 @@
  * @Author: Howie 
  * @Date: 2019-10-07 13:21:32 
  * @Last Modified by: Howie
- * @Last Modified time: 2020-02-27 16:07:04
+ * @Last Modified time: 2020-02-28 09:54:40
  */
 
 <template>
   <div id="pageHeader">
     <div class="container df ac jsb pl40 pr40">
-      <img class="logo cp" src="http://47.116.199.18/static/logo.png" alt="" @click="backHome">
+      <img class="logo cp" src="http://47.116.199.18/static/pc/logo.png" alt="" @click="backHome">
       <div class="nav df ac">
         <div 
         :class="[index >= navArr.length - 1 ? 'navItem pr mr20' : 'navItem pr mr60']"
@@ -67,7 +67,7 @@ export default {
 #pageHeader {
   width: 100%;
   height: 60px;
-  background-image: url(http://47.116.199.18/static/headerBg.png);
+  background-image: url(http://47.116.199.18/static/pc/headerBg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
