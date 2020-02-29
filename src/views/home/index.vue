@@ -125,7 +125,6 @@ export default {
       })
     },
     init () {
-      document.title = 'Rovonew | 洛弗影业'
     },
     scrollToAbout () {
       let distance = this.$refs.about.offsetTop - 60
