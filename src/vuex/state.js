@@ -17,11 +17,11 @@ export default {
         en: 'ABOUT'
       },
       picUrl: {
-        en: 'http://47.116.199.18/static/pc/about.png',
+        en: 'http://47.116.199.18/img/pc/about.png',
         zh: ''
       },
       path: '/aboutUs',
-      bgPath: 'http://47.116.199.18/static/pc/index-00.png'
+      bgPath: 'http://47.116.199.18/img/pc/index-00.png'
     },
     {
       index: 2,
@@ -31,11 +31,11 @@ export default {
         en: 'JOIN US'
       },
       picUrl: {
-        en: 'http://47.116.199.18/static/pc/joinus.png',
+        en: 'http://47.116.199.18/img/pc/joinus.png',
         zh: ''
       },
       path: '/joinUs',
-      bgPath: 'http://47.116.199.18/static/pc/index-01.png'
+      bgPath: 'http://47.116.199.18/img/pc/index-01.png'
     },
     {
       index: 3,
@@ -45,11 +45,11 @@ export default {
         en: 'CONTACT'
       },
       picUrl: {
-        en: 'http://47.116.199.18/static/pc/contact.png',
+        en: 'http://47.116.199.18/img/pc/contact.png',
         zh: ''
       },
       path: '/contactUs',
-      bgPath: 'http://47.116.199.18/static/pc/index-04.png'
+      bgPath: 'http://47.116.199.18/img/pc/index-04.png'
     },
     {
       index: 4,
@@ -59,24 +59,24 @@ export default {
         en: 'EN / 中文'
       },
       picUrl: {
-        en: 'http://47.116.199.18/static/pc/en_zh.png',
+        en: 'http://47.116.199.18/img/pc/en_zh.png',
         zh: ''
       },
       path: '',
-      bgPath: 'http://47.116.199.18/static/pc/index-02.png'
+      bgPath: 'http://47.116.199.18/img/pc/index-02.png'
     }
   ],
   swiperArr: [
-    'http://47.116.199.18/static/pc/swiperPIc/pic-01.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-02.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-03.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-04.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-05.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-06.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-07.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-08.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-09.png',
-    'http://47.116.199.18/static/pc/swiperPIc/pic-10.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-01.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-02.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-03.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-04.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-05.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-06.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-07.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-08.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-09.png',
+    'http://47.116.199.18/img/pc/swiperPIc/pic-10.png',
   ]
 }
   

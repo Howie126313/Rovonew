@@ -21,8 +21,8 @@
         class="homeImg opacityAnimate">
       </template>
       <div class="rovoContainer tc cp" @click="scrollToAbout">
-        <img src="http://47.116.199.18/static/pc/homeRovo.png" alt="" class="rovo mb15">
-        <img src="http://47.116.199.18/static/pc/downArrow.png" alt="" class="rovoArrow">
+        <img src="http://47.116.199.18/img/pc/homeRovo.png" alt="" class="rovo mb15">
+        <img src="http://47.116.199.18/img/pc/downArrow.png" alt="" class="rovoArrow">
       </div>
     </div>
     <!-- 内容 -->
@@ -30,7 +30,7 @@
       <div class="aboutContent">
         <!-- 关于我们 -->
         <div v-if="opcityShow" class="pr opacityAnimate" ref="about">
-          <img class="mb20" src="http://47.116.199.18/static/pc/titleAbout.png" alt="">
+          <img class="mb20" src="http://47.116.199.18/img/pc/titleAbout.png" alt="">
           <div class="titleWords pr">关于我们</div>
           <div class="aboutWords tl">
             <p class="title mb35">
@@ -39,11 +39,11 @@
             </p>
             <div class="content" v-html="aboutContent[language]"></div>
           </div>
-          <img src="http://47.116.199.18/static/pc/rightArrow.png" alt="" class="rightArrow cp" @click="tpDetail('/aboutUs')">
+          <img src="http://47.116.199.18/img/pc/rightArrow.png" alt="" class="rightArrow cp" @click="tpDetail('/aboutUs')">
         </div>
         <!-- 加入我们 -->
         <div v-if="opcityShow" class="pr opacityAnimate">
-          <img class="mb20" src="http://47.116.199.18/static/pc/titleJoin.png" alt="">
+          <img class="mb20" src="http://47.116.199.18/img/pc/titleJoin.png" alt="">
           <div class="titleWords pr">加入我们</div>
           <div class="aboutWords tl">
             <p class="title mb35">
@@ -52,20 +52,20 @@
             </p>
             <div class="content" v-html="joinContent[language]"></div>
           </div>
-          <img src="http://47.116.199.18/static/pc/rightArrow.png" alt="" class="rightArrow cp" @click="tpDetail('/joinUs')">
+          <img src="http://47.116.199.18/img/pc/rightArrow.png" alt="" class="rightArrow cp" @click="tpDetail('/joinUs')">
         </div>
         <!-- 联系我们 -->
         <div v-if="opcityShow" class="opacityAnimate">
-          <img class="contactTitlePic mb20" src="http://47.116.199.18/static/pc/titleContact.png" alt="">
+          <img class="contactTitlePic mb20" src="http://47.116.199.18/img/pc/titleContact.png" alt="">
           <div class="titleWords pr">联系我们</div>
           <div class="contactBox df ac jsb">
             <div class="left df ac">
-              <img class="mr15" src="http://47.116.199.18/static/pc/phoneIcon.png" alt="">
+              <img class="mr15" src="http://47.116.199.18/img/pc/phoneIcon.png" alt="">
               <p v-if="language === 'en'">weChat: ROVODORIS</p>
               <p v-else>微信: ROVODORIS</p>
             </div>
             <div class="right df ac">
-              <img class="mr15"  src="http://47.116.199.18/static/pc/mailIcon.png" alt="">
+              <img class="mr15"  src="http://47.116.199.18/img/pc/mailIcon.png" alt="">
               <p v-if="language === 'en'">E-mail: 1187370088@qq.com</p>
               <p v-else>邮箱: 1187370088@qq.com</p>
             </div>
@@ -105,7 +105,7 @@ export default {
       aboutContent: this.$store.getters.getAboutText,
       joinContent: this.$store.getters.getJoinText,
       opcityShow: true,
-      bgSrc: 'http://47.116.199.18/static/pc/banner.png',
+      bgSrc: 'http://47.116.199.18/img/pc/banner.png',
       bannerArr: [],
       activeBanner: 0
     }

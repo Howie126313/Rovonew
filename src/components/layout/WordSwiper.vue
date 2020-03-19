@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-11 14:00:59 
  * @Last Modified by: Howie
- * @Last Modified time: 2020-02-27 16:09:41
+ * @Last Modified time: 2020-03-19 09:49:02
  */
 
 /* eslint-disable */
@@ -30,8 +30,8 @@
           </swiper-slide>
         </swiper>
         <!-- 切换 -->
-        <img src="http://47.116.199.18/static/pc/rightArrow.png" alt="" class="leftArrow cp" @click="changePic('pre')">
-        <img src="http://47.116.199.18/static/pc/rightArrow.png" alt="" class="rightArrow cp"  @click="changePic('next')">
+        <img src="http://47.116.199.18/img/pc/rightArrow.png" alt="" class="leftArrow cp" @click="changePic('pre')">
+        <img src="http://47.116.199.18/img/pc/rightArrow.png" alt="" class="rightArrow cp"  @click="changePic('next')">
         <!-- 分页器 -->
         <div class="paginationContain df ac">
           <div 
