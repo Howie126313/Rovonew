@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2019-10-07 17:44:22 
  * @Last Modified by: Howie
- * @Last Modified time: 2020-02-27 16:49:42
+ * @Last Modified time: 2020-03-20 17:32:31
  */
 
 <template>
@@ -66,7 +66,7 @@
             </div>
             <div class="right df ac">
               <img class="mr15"  src="http://47.116.199.18/img/pc/mailIcon.png" alt="">
-              <p v-if="language === 'en'">E-mail: 1187370088@qq.com</p>
+              <p v-if="language === 'en'">E-mail: ROVOSTUDIOS@163.COM</p>
               <p v-else>邮箱: 1187370088@qq.com</p>
             </div>
           </div>
