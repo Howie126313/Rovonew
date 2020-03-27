@@ -26,7 +26,7 @@ export default {
   data () {
     return {
       options: {
-        titleImg: 'http://47.116.199.18/img/pc/titleAbout.png',
+        titleImg: 'http://image.rovostudios.com/img/pc/titleAbout.png',
         contentText: this.$store.getters.getAboutText,
         swiperArr: this.$store.getters.getSwiperArr
       }
