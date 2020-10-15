@@ -1,26 +1,27 @@
 /*
  * @Author: Howie 
  * @Date: 2019-10-11 11:22:47 
- * @Last Modified by: Howie
- * @Last Modified time: 2020-02-27 16:04:51
+ * @Last Modified by: Bryan
+ * @Last Modified time: 2020-10-15 16:58:09
  */
 <template>
   <div id="joinus">
     <Header />
-    <div class="container">
-      <WordSwiper :options="options" />
+    <div class="container df">
+      <img class="titleImg" :src="options.titleImg" alt="">
+      <div class="listContainer">
+        
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Header from '@/components/PageHeader.vue'
-import WordSwiper from '@/components/layout/WordSwiper.vue'
 
 export default {
   components: {
-    Header,
-    WordSwiper
+    Header
   },
   data () {
     return {
@@ -35,7 +36,7 @@ export default {
 </script>
 
 <style scoped>
-#joinus {
+/* #joinus {
   position: fixed;
   left: 0;
   top: 0;
@@ -51,5 +52,16 @@ export default {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+} */
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.titleImg {
+  width: auto;
+  height: 20px;
 }
 </style>
