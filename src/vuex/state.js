@@ -5,8 +5,8 @@ export default {
     en: 'ROVO Picture is a full-process film and television production company that is committed to producing international films of great asethetic value and impresing visual arts. \n \nExcellent film production talents are brought together both at home and abroad to produce high-quality films. \n \nOur first film is base on the theme of science fiction, suspense, and action. It is planned to released globally, taking the young generation as its target. Our company works with top Chinese and Hollywood screenwriters, directors, photographers, editors, visual effect advisors, creative directors, and colorists. The mission of going global is firmly adhered to.'
   },
   joinText: {
-    zh: '招聘全职英文翻译 \n英语专业硕士毕业 \n翻译能力强，男女不限 \n工作地点：洛杉矶、纽约、北京 \n能适应美国工作，吃苦耐劳，薪资面谈 \n \n欢迎加入我们',
-    en: 'We are looking for full-time fashion designers, film and television \ncharacter designers, and stagecraft designers. \nSkills Needed: Strong design capability. \nKey Resonsibilities: Concept clothing design, sci-fi costumes \ndesign, landscapes and props design. \nLocation: Los Angeles, New York, Beijing. \nWe hope you are able to work in the U.S. and bear hardships, \nsalary will be discussed in person. \nResumes and portfolios can be sent to the following mailbox.'
+    zh: '职位：\n \n 院线电影编剧 \n 剧本顾问 \n 执行制片 \n 生产制片 \n 现场副导演 \n 演员副导演 \n 导演助理 \n 美术 \n 服装设计 \n 舞台美术设计 \n 摄影 \n 动画 \n 特效 \n \n 工作地点：洛杉矶、北京',
+    en: 'Jobs: \n \n Screenwriter \n Script Consultant \n Line Producer \n Unit Production Manager \n 1st Assiatant of Director \n 2nd Assistant of Director \n Directors Assistant \n Production Designer \n Costume Designer \n Visual Designer \n Director of Cinematography \n Animator \n Special Effect Artist \n \n Location: Beijing, Los Angeles'
   },
   navArr: [
     {
